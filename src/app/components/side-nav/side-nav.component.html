@@ -1,0 +1,29 @@
+<br>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ng-template #content let-offcanvas>
+                    <div class="offcanvas-header">
+                        <h4 class="offcanvas-title">LIBRARIAN PANEL</h4>
+                        <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <h5>PUBLISHER</h5>
+                        <ul>
+                            <li><a routerLink="/addPublisher">Add Publisher</a></li>
+                            <li>View All</li>
+                            <li>Edit</li>
+                        </ul>
+                        <div class="text-end">
+                            <button type="button" class="btn btn-outline-secondary" (click)="offcanvas.close('Close click')">Close</button>
+                        </div>
+                    </div>
+                </ng-template>
+                <button class="btn btn-lg btn-outline-primary mb-2 me-2" (click)="openCustomBackdropClass(content)">
+                    Custom backdrop class
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,6 @@
+.navbar{
+    background: #00CCFF;
+}
+.nav-item a:link,.nav-item a:visited{
+    color:#000 !important;
+}
